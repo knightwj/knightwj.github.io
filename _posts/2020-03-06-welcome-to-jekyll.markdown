@@ -20,7 +20,23 @@ print_hi('Tom')
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
+<center>
 
+<table>
+<tr>
+<th rowspan="2">值班人员</th>
+<th>星期一</th>
+<th>星期二</th>
+<th>星期三</th>
+</tr>
+<tr>
+<td>李强</td>
+<td>张明</td>
+<td>王平</td>
+</tr>
+</table>
+
+</center>
 
 
 
