@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="onset" style="width: 1200px;height:800px;margin:0;auto;"></div>
+    <script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('onset'));
+    myChart.setOption(
+    {
+    xAxis: {
+        type: 'category',
+        axisLabel:{
+            rotate:60,
+            interval:0,
+            textStyle: {
+          color: 'black',  //更改坐标轴文字颜色
+          fontSize : 12      //更改坐标轴文字大小
+        }
+        },
+        data: ['1月01日','1月02日','1月03日','1月04日','1月06日','1月08日','1月09日','1月11日','1月12日','1月13日','1月14日','1月15日','1月16日','1月17日','1月18日','1月19日','1月20日','1月21日','1月22日','1月23日','1月24日','1月25日','1月26日','1月27日','1月28日','1月29日','1月30日','1月31日','2月01日','2月02日','2月03日','2月04日','2月05日','2月06日','2月07日','2月08日','2月09日','2月10日','2月11日','2月12日','2月13日','2月14日']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        data: [1,0,1,2,1,2,1,2,3,1,1,2,7,4,7,13,20,14,28,31,34,24,33,32,20,18,19,7,18,8,10,8,12,5,3,6,3,5,2,3,3,2],
+        type: 'line',
+        symbol:"none",    
+        lineStyle: {
+            normal: {
+                color: '#46bee9',
+                width: 3,
+                opacity: 1,
+                curveness:0
+            }
+        }
+    ,
+        // effect: {
+        //     show: true,
+        //     period: 1,
+        //     trailLength: 0,
+        //     symbol: 'pin',
+        //     symbolSize: 15,
+        //     loop: false,},
+            animationDuration:10000,
+            animationDelay: function (idx) {
+    // 越往后的数据延迟越大
+    return idx * 1000;
+},
+
+    }]
+}
+ );
+        </script>
+</body>
+</html>
