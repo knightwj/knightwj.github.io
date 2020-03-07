@@ -38,14 +38,15 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 </center>
   
-  
-
-
-  
-
 
 
 {% include graph.html %}
+  
+
+
+{% include time.html %}
+
+
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
