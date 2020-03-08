@@ -37,18 +37,17 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 </table>
 
 </center>
+
+here is the onset graph
+
+{% include onset.html %}
   
 this is the graph showing the individual and clustering cases of covid19 in SZ.
 
 {% include graph.html %}
   
-here is another graph demonstrating the c-section rate in major cities in CN.
 
-{% include time.html %}
 
-here is the onset graph
-
-{% include onset.html %}
 
 
 
