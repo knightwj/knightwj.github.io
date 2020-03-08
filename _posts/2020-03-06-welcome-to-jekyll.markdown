@@ -4,11 +4,11 @@ title:  "深圳公布的第1-416个covid-19病例"
 date:   2020-03-06 10:25:27 +0800
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Thanks to the transparent and detailed data sharing of the individual covid-19 cases on a daily basis by the Shenzhen municipal health commision, we have access to the info regarding the infected people's age,gender,and which city is he/she from, relationship with other cases and so on.   
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Data visulization was done by Echarts, Baidu's interactive charting and visulization library,very versatile and handy to use. Relevant info of the library can be found here.  
 
-Jekyll also offers powerful support for code snippets:
+Here is how the blog highlight code snippets:
 
 {% highlight ruby %}
 def print_hi(name)
@@ -46,18 +46,6 @@ this is the graph showing the individual and clustering cases of covid19 in SZ.
 
 {% include graph.html %}
   
-
-
-<center>
-
-<div style="width: 1000px;height:800px;margin:0;auto;"> try this </div>
-
-
-</center>
-  
-
-
-
 
 
 
