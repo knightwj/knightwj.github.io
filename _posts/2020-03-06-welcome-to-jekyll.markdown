@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 Thanks to the transparent and detailed data sharing of the individual covid-19 cases on a daily basis by the Shenzhen municipal health commision, we have access to the info regarding the infected people's age,gender,and which city is he/she from, relationship with other cases and so on.   
 
-Data visulization was done by Echarts, Baidu's interactive charting and visulization library,very versatile and handy to use. Relevant info of the library can be found [here][baidu-echarts].  
+Data visulization was done by Echarts, Baidu's interactive charting and visulization library,very versatile and handy to use. Relevant info of the library can be found here on the [Echarts website][baidu-echarts].  
 
 Here is how the blog highlight code snippets:
 
@@ -54,4 +54,4 @@ This is the graph showing the individual and clustering cases of covid19 in SZ.
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
-[here]: https://www.echartsjs.com/zh/index.html
+[baidu-echarts]: https://www.echartsjs.com/zh/index.html
