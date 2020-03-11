@@ -127,7 +127,9 @@
                 force: {
                     repulsion: 30
                 },
-
+                animationDuration:10000,
+                animationDelay: function (idx) {
+                        return idx * 2000;},
                 lineStyle: {
                     color: '#000000',
                     curveness: 0,
