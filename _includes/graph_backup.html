@@ -20,7 +20,16 @@
         },
         {
             "name": "female"
-        }],
+        },
+        {
+            "name": "age<=18"
+        },
+        {
+            "name": "18<age<65"
+        },
+        {
+            "name": "age>=65"
+        },],
     "nodes": [{id:'case_1',value:66,category:'male',symbolSize:20,
     symbol:'path://M1408 704v416q0 40-28 68t-68 28-68-28-28-68v-352h-64v912q0 46-33 79t-79 33-79-33-33-79v-464h-64v464q0 46-33 79t-79 33-79-33-33-79v-912h-64v352q0 40-28 68t-68 28-68-28-28-68v-416q0-80 56-136t136-56h640q80 0 136 56t56 136zm-288-448q0 93-65.5 158.5t-158.5 65.5-158.5-65.5-65.5-158.5 65.5-158.5 158.5-65.5 158.5 65.5 65.5 158.5z',itemStyle:{color:'#c71969'}},
     {id:'case_2',value:65,category:'female',symbolSize:20,symbol:'path://M1536 1056q0 40-28 68t-68 28q-51 0-80-43l-227-341h-45v132l247 411q9 15 9 33 0 26-19 45t-45 19h-192v272q0 46-33 79t-79 33h-160q-46 0-79-33t-33-79v-272h-192q-26 0-45-19t-19-45q0-18 9-33l247-411v-132h-45l-227 341q-29 43-80 43-40 0-68-28t-28-68q0-29 16-53l256-384q73-107 176-107h384q103 0 176 107l256 384q16 24 16 53zm-416-800q0 93-65.5 158.5t-158.5 65.5-158.5-65.5-65.5-158.5 65.5-158.5 158.5-65.5 158.5 65.5 65.5 158.5z',itemStyle:{color:'#c71969'}},
@@ -46,32 +55,45 @@
                           {source:'case_6',target:'case_66'},{source:'case_20',target:'case_67'},{source:'case_20',target:'case_68'},{source:'case_20',target:'case_69'},{source:'case_73',target:'case_74'},{source:'case_29',target:'case_80'},{source:'case_94',target:'case_95'},{source:'case_97',target:'case_98'},{source:'case_99',target:'case_100'},{source:'case_99',target:'case_101'},{source:'case_99',target:'case_102'},{source:'case_105',target:'case_106'},{source:'case_105',target:'case_107'},{source:'case_76',target:'case_108'},{source:'case_76',target:'case_109'},{source:'case_76',target:'case_110'},{source:'case_87',target:'case_120'},{source:'case_87',target:'case_121'},{source:'case_97',target:'case_123'},{source:'case_98',target:'case_124'},{source:'case_98',target:'case_125'},{source:'case_129',target:'case_133'},{source:'case_129',target:'case_134'},{source:'case_98',target:'case_136'},{source:'case_138',target:'case_139'},{source:'case_29',target:'case_146'},{source:'case_105',target:'case_147'},{source:'case_150',target:'case_151'},{source:'case_84',target:'case_153'},{source:'case_114',target:'case_154'},{source:'case_114',target:'case_155'},{source:'case_162',target:'case_163'},{source:'case_132',target:'case_165'},{source:'case_127',target:'case_168'},{source:'case_115',target:'case_169'},{source:'case_167',target:'case_173'},{source:'case_166',target:'case_174'},{source:'case_94',target:'case_178'},{source:'case_180',target:'case_184'},{source:'case_12',target:'case_188'},{source:'case_131',target:'case_191'},{source:'case_193',target:'case_195'},{source:'case_190',target:'case_197'},{source:'case_201',target:'case_202'},{source:'case_179',target:'case_203'},{source:'case_179',target:'case_204'},{source:'case_179',target:'case_205'},{source:'case_133',target:'case_216'},{source:'case_24',target:'case_218'},{source:'case_186',target:'case_219'},{source:'case_220',target:'case_221'},{source:'case_78',target:'case_222'},{source:'case_217',target:'case_223'},{source:'case_183',target:'case_224'},{source:'case_183',target:'case_225'},{source:'case_185',target:'case_227'},{source:'case_199',target:'case_228'},{source:'case_198',target:'case_230'},{source:'case_132',target:'case_231'},{source:'case_106',target:'case_232'},{source:'case_172',target:'case_233'},{source:'case_210',target:'case_237'},{source:'case_220',target:'case_238'},{source:'case_209',target:'case_242'},{source:'case_114',target:'case_244'},{source:'case_47',target:'case_247'},{source:'case_206',target:'case_248'},{source:'case_220',target:'case_249'},{source:'case_214',target:'case_253'},{source:'case_133',target:'case_255'},{source:'case_251',target:'case_256'},{source:'case_126',target:'case_257'},{source:'case_255',target:'case_261'},{source:'case_255',target:'case_264'},{source:'case_255',target:'case_267'},{source:'case_135',target:'case_274'},{source:'case_89',target:'case_275'},{source:'case_280',target:'case_281'},{source:'case_280',target:'case_282'},{source:'case_141',target:'case_283'},{source:'case_278',target:'case_284'},{source:'case_209',target:'case_285'},{source:'case_299',target:'case_300'},{source:'case_309',target:'case_310'},{source:'case_245',target:'case_311'},{source:'case_245',target:'case_312'},{source:'case_268',target:'case_313'},{source:'case_308',target:'case_314'},{source:'case_315',target:'case_316'},{source:'case_193',target:'case_317'},{source:'case_252',target:'case_319'},{source:'case_43',target:'case_320'},{source:'case_245',target:'case_321'},{source:'case_245',target:'case_322'},{source:'case_171',target:'case_323'},{source:'case_250',target:'case_324'},{source:'case_250',target:'case_325'},{source:'case_262',target:'case_326'},{source:'case_87',target:'case_327'},{source:'case_333',target:'case_334'},{source:'case_337',target:'case_338'},{source:'case_337',target:'case_339'},{source:'case_304',target:'case_340'},{source:'case_245',target:'case_341'},{source:'case_342',target:'case_343'},{source:'case_300',target:'case_344'},{source:'case_87',target:'case_345'},{source:'case_329',target:'case_353'},{source:'case_270',target:'case_354'},{source:'case_277',target:'case_357'},{source:'case_337',target:'case_360'},{source:'case_335',target:'case_362'},{source:'case_329',target:'case_365'},{source:'case_214',target:'case_367'},{source:'case_342',target:'case_368'},{source:'case_366',target:'case_370'},{source:'case_328',target:'case_371'},{source:'case_372',target:'case_373'},{source:'case_361',target:'case_375'},{source:'case_376',target:'case_377'},{source:'case_294',target:'case_380'},{source:'case_347',target:'case_384'},{source:'case_115',target:'case_387'},{source:'case_235',target:'case_392'},{source:'case_304',target:'case_393'},{source:'case_335',target:'case_394'},{source:'case_235',target:'case_395'},{source:'case_133',target:'case_398'},{source:'case_372',target:'case_399'},{source:'case_396',target:'case_401'},{source:'case_397',target:'case_402'},{source:'case_207',target:'case_406'},{source:'case_382',target:'case_407'},{source:'case_171',target:'case_408'},{source:'case_179',target:'case_409'},{source:'case_304',target:'case_410'},{source:'case_397',target:'case_415'}]};
         var option = {
             title: {
-            text: '第1-416个病例'},
+            top:2,
+            left:"2%",
+            text: 'The 1st to the 416th Covid-19 cases reported in SZ',
+            textStyle:{
+                fontSize:15,
+            }
+        },
             color:['black','black'],
             legend: [
             { top: '5%',
                 right: '10%',
+                orient: 'vertical',
                 data: [{name:'male', 
     		        icon:'path://M1408 704v416q0 40-28 68t-68 28-68-28-28-68v-352h-64v912q0 46-33 79t-79 33-79-33-33-79v-464h-64v464q0 46-33 79t-79 33-79-33-33-79v-912h-64v352q0 40-28 68t-68 28-68-28-28-68v-416q0-80 56-136t136-56h640q80 0 136 56t56 136zm-288-448q0 93-65.5 158.5t-158.5 65.5-158.5-65.5-65.5-158.5 65.5-158.5 158.5-65.5 158.5 65.5 65.5 158.5z'},
     		        {name:'female',
     		         icon: 'path://M1536 1056q0 40-28 68t-68 28q-51 0-80-43l-227-341h-45v132l247 411q9 15 9 33 0 26-19 45t-45 19h-192v272q0 46-33 79t-79 33h-160q-46 0-79-33t-33-79v-272h-192q-26 0-45-19t-19-45q0-18 9-33l247-411v-132h-45l-227 341q-29 43-80 43-40 0-68-28t-28-68q0-29 16-53l256-384q73-107 176-107h384q103 0 176 107l256 384q16 24 16 53zm-416-800q0 93-65.5 158.5t-158.5 65.5-158.5-65.5-65.5-158.5 65.5-158.5 158.5-65.5 158.5 65.5 65.5 158.5z'}]},
             {  
                 top: '5%',
-                left: '10%',
+                left: '5%',
+                orient: 'vertical',
+                textStyle:{
+                    color:['#1984c7','#19c719','#c71969']
+
+                },
+                borderWidth:0,
                 data:[
-                    {name: '18岁及以下',
-                        icon:'circle',
+                    {name: 'age<=18',
+                        icon:'none',
                     textStyle: {
-                             color: 'red'}},
-                    {name: '18岁至63岁',
-                        icon:'circle',
+                             color: '#19c719'}},
+                    {name: '18<age<65',
+                        icon:'none',
                     textStyle: {
-                     color: 'red'
+                     color: '#1984c7'
                                 }},
-                    {name:'65岁及以上',
-                        icon:'cirlce',
+                    {name:'age>=65',
+                        icon:'none',
                         textStyle: {
-                            color: 'red'
+                           color: '#c71969'
                                 }}]
                      }
                      ],
@@ -99,10 +121,11 @@
                 name: 'test',
                 type: 'graph',
                 layout: 'force',
-                roam: true,
+                roam: false,
+                draggable: true,
+                label:{show:true},
                 force: {
-                    repulsion: 30,
-                    gravity: 0.1
+                    repulsion: 30
                 },
 
                 lineStyle: {
