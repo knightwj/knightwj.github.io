@@ -8,9 +8,8 @@ categories: jekyll update
 Thanks to the transparent and detailed data sharing of the individual covid-19 cases on a daily basis by the Shenzhen municipal health commision, we have access to the info regarding the infected people's age,gender,and which city is he/she from, relationship with other cases and so on.   
  </p>
 
-<p style="text-align:justify; text-justify:inter-ideograph;">
+
 Data visulization was done by Echarts, Baidu's interactive charting and visulization library,very versatile and handy to use. Relevant info of the library can be found here on the [Echarts website][baidu-echarts].  
- </p>
 
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
