@@ -21,7 +21,10 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 Here is the onset graph
 
 {% include onset.html %}
-  
+
+<p style="text-align:justify; text-justify:inter-ideograph;"> 
+Since the case descripitions report explicitly the relations between infected cases, I use network graph to demonstrate how cases are clusted and this kind of plot is helpful to give us a glimpse of how infectious the virus is.
+<\p>
 
 <center>
 {% include graph_backup.html %}
