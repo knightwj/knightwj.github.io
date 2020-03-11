@@ -20,7 +20,7 @@ Here is the onset graph
 
 {% include onset.html %}
   
-This is the graph showing the individual and clustering cases of covid19 in SZ.
+
 <center>
 {% include graph_backup.html %}
 </center>
