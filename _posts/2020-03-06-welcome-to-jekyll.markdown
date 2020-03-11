@@ -9,8 +9,7 @@ Thanks to the transparent and detailed data sharing of the individual covid-19 c
  </p>
 
 <p style="text-align:justify; text-justify:inter-ideograph;">
-the original case data were description in plain text, R and regular expression are useful in extacting the data out of text and fitted into structured format. 
-</p>
+the original case data were description in plain text, R and regular expression are useful in extacting the data out of text and fitted into structured format. </p>
 
 <p style="text-align:justify; text-justify:inter-ideograph;">
 Data visulization was done by Echarts, Baidu's interactive charting and visulization library,very versatile and handy to use. Relevant info of the library can be found here on the <a href="https://www.echartsjs.com/zh/index.html">Echarts website</a>.  
