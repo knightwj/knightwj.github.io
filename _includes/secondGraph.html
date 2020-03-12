@@ -7,7 +7,7 @@
 </head>
 <body>
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-    <div id="secondGraph" style="width: 1200px;height:600px;"></div>
+    <div id="secondGraph" style="width: 1000px;height:600px;"></div>
     <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('secondGraph'));
@@ -57,7 +57,7 @@
     xAxis: [
         {
             type: 'category',
-            data: ['<=5岁', '6-18岁', '19-45岁', '46-60岁', '>60岁']
+            data: ['<=5', '6-18', '19-45', '46-60', '>60']
         },
         {   gridIndex:1,
             type: 'value',
@@ -70,7 +70,7 @@
         },
         {  gridIndex:1,
             type: 'category',
-            data:['武汉居民','湖北非武汉居民','深圳市民','其他地区']
+            data:['Wuhan residents','hubei residents','Shenzhen residents','others']
         },
     ],
     series: [
