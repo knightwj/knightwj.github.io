@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -15,8 +15,8 @@
 
         option = {
     title: {
-        text: '354个新冠感染个案基本情况',
-        subtext: '数据来源：市卫生健康委',
+        text: '',
+        subtext: '',
         bottom: '-1%',
         left: '45%'
     },
@@ -24,11 +24,11 @@
         trigger: 'axis'
     },
     legend:[ {
-        data: ['女', '男'],
+        data: ['female', 'male'],
         left: 240,
         bottom:10,
     },{
-        data: ['有武汉/湖北居住/旅行史', '无武汉/湖北居住/旅行史'],
+        data: ['Wuhan/Hubei traveling history', 'no traveling history'],
         right: 40,
         bottom:'45%',
     },],
@@ -76,7 +76,7 @@
     ],
     series: [
         {
-            name: '女',
+            name: 'female',
             type: 'bar',
             data: [ 7, 11,64, 54,46],
             itemStyle: {
@@ -97,7 +97,7 @@
             }*/
         },
         {
-            name: '男',
+            name: 'male',
             type: 'bar',
             data: [3,9,66,50,44],
             itemStyle: {
@@ -117,7 +117,7 @@
                 ]
             }*/
         },{
-            name: '有武汉/湖北居住/旅行史',
+            name: 'Wuhan/Hubei traveling history',
             type: 'bar',
               itemStyle: {
             color: '#c23531'},
@@ -127,7 +127,7 @@
             data:[103,27,132,11]
         },
         {
-            name: '无武汉/湖北居住/旅行史',
+            name: 'no traveling history',
             type: 'bar',
             itemStyle: {
             color: '#61a0a8'
