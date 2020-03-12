@@ -21,7 +21,7 @@ Here is the onset graph
 
 
 
-Here is a further breakdown of age and traveling history.
+Here is a further breakdown of age and traveling history(numbers not updated yet for this graph).
 
 <center>
 {% include secondGraph.html %}
