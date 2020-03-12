@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="secondGraph" style="width: 1200px;height:600px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('secondGraph'));
+
+        option = {
+    title: {
+        text: '354个新冠感染个案基本情况',
+        subtext: '数据来源：市卫生健康委',
+        bottom: '-1%',
+        left: '45%'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend:[ {
+        data: ['女', '男'],
+        left: 240,
+        bottom:10,
+    },{
+        data: ['有武汉/湖北居住/旅行史', '无武汉/湖北居住/旅行史'],
+        right: 40,
+        bottom:'45%',
+    },],
+    toolbox: {
+        show: true,
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    calculable: true,
+    grid: [{
+        top: 50,
+        width: '50%',
+        bottom: '10%',
+        left: 10,
+        containLabel: true
+    }, {
+        top: '5%',
+        width: '50%',
+        bottom: '50%',
+        left: '60%',
+        containLabel: true
+    }],
+    xAxis: [
+        {
+            type: 'category',
+            data: ['<=5岁', '6-18岁', '19-45岁', '46-60岁', '>60岁']
+        },
+        {   gridIndex:1,
+            type: 'value',
+            
+        },
+    ],
+    yAxis: [
+        {
+            type: 'value'
+        },
+        {  gridIndex:1,
+            type: 'category',
+            data:['武汉居民','湖北非武汉居民','深圳市民','其他地区']
+        },
+    ],
+    series: [
+        {
+            name: '女',
+            type: 'bar',
+            data: [ 7, 11,64, 54,46],
+            itemStyle: {
+            color: '#c23531'},
+            markPoint: {
+                data: [
+                    {name: '1', value: '7人', xAxis: 0, yAxis: 7},
+                    {name: '2', value: '11人', xAxis: 1, yAxis: 11},
+                    {name: '3', value: '64人', xAxis: 2, yAxis: 64},
+                    {name: '4', value: '54人', xAxis: 3, yAxis: 54},
+                    {name: '5', value: '46人', xAxis: 4, yAxis: 46},
+                ]
+            },
+/*            markLine: {
+                data: [
+                    {type: 'average', name: '平均值'}
+                ]
+            }*/
+        },
+        {
+            name: '男',
+            type: 'bar',
+            data: [3,9,66,50,44],
+            itemStyle: {
+            color: '#61a0a8'
+            },
+            markPoint: {
+                data: [
+                    {name: 'a', value: '3人', xAxis: 0, yAxis: 3},
+                    {name: 'b', value: '9人', xAxis: 1, yAxis: 9},
+                    {name: 'c', value: '66人', xAxis: 2, yAxis: 66},
+                    {name: 'd', value: '50人', xAxis: 3, yAxis: 50},
+                    {name: 'e', value: '44人', xAxis: 4, yAxis: 44},]
+            },
+           /* markLine: {
+                data: [
+                    {type: 'average', name: '平均值'}
+                ]
+            }*/
+        },{
+            name: '有武汉/湖北居住/旅行史',
+            type: 'bar',
+              itemStyle: {
+            color: '#c23531'},
+            xAxisIndex: 1,
+            yAxisIndex: 1,
+            stack: "tot",
+            data:[103,27,132,11]
+        },
+        {
+            name: '无武汉/湖北居住/旅行史',
+            type: 'bar',
+            itemStyle: {
+            color: '#61a0a8'
+            },
+            xAxisIndex: 1,
+            yAxisIndex: 1,
+            stack: "tot",
+            data:[0,0,77,4]
+        },{
+            name: '散发病例',
+            type: 'pie',
+            radius: [0, '30%'],
+            center: ['80%', '80%'],
+            data:[
+            {value: 192, name: '家庭聚集病例(54%)'},
+            {value: 162, name: '散发病例(46%)'},],
+            color: ['#c23531','#61a0a8'],
+        },
+
+    ]
+};
+
+        myChart.setOption(option);
+    </script>
+</body>
+</html>
