@@ -17,7 +17,7 @@ title: Joe's blog
 email: knightwj@foxmail.com
 description: > # this means to ignore newlines until "baseurl:"
   R and python user, data science. Stay curious and life-long learner.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: knightwj
 github_username:  knightwj
