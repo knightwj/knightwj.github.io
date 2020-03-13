@@ -1,0 +1,89 @@
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+</head>
+    <!-- 引入 echarts.js -->
+     <script  src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+     <script  src="shenzhen.json"></script>
+
+<body>
+    <div id="main" style="height:600px;"/>
+</body>
+
+  
+    <script type="text/javascript">
+
+        var myChart = echarts.init(document.getElementById('main'));
+
+        $.get("./echarts/map/json/shenzhen.json",function(geojson){
+            echarts.registerMap("shenzhen",geojson);
+        
+
+        var dataList=[
+            {name: "南山区", value: randomValue()},
+            {name: '宝安区', value: randomValue()},
+            {name: '福田区', value: randomValue()},
+            {name: '龙岗区', value: randomValue()},
+            {name: '罗湖区', value: randomValue()},
+            {name: '光明区', value: randomValue()},
+            {name: '龙华区', value: randomValue()},
+            {name: '坪山区', value: randomValue()},
+            {name: '盐田区', value: randomValue()},
+            {name: '大鹏区', value: randomValue()},
+  
+        ]
+        
+ 
+
+        function randomValue() {
+            return Math.round(Math.random()*1000);
+        }
+        option = {
+            
+            visualMap: {
+                min: 0,
+                max: 1500,
+                left: 'left',
+                top: 'bottom',
+                text: ['高','低'],//取值范围的文字
+                inRange: {
+                    color: ['#e0ffff', '#006edd']//取值范围的颜色
+                },
+                show:true//图注
+            },
+            series : [  
+                {
+                    name: '深圳',
+                    type: 'map',
+                    map:"shenzhen",
+                    itemStyle:{
+                    emphasis:{label:{show:true}}
+                },
+                    geoIndex: 0,
+                    data:dataList,
+                    
+                    
+                }
+            ]
+        };
+        myChart.setOption(option);
+    })
+
+ 
+      /*  setTimeout(function () {
+            myChart.setOption({
+                series : [
+                    {
+                        name: '信息量',
+                        type: 'map',
+                        geoIndex: 0,
+                        data:dataList
+                    }
+                ]
+            });
+        },1000)*/
+    </script>
+

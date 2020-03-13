@@ -8,7 +8,7 @@ categories: jekyll update
 Aagin a brand new page
  </p>
 
-
+{% include map.html %}
 
 
 
