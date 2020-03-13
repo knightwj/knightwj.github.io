@@ -12,7 +12,7 @@ categories: jekyll update
 
 </head>
     <!-- 引入 echarts.js -->
-    <script src="/_site/assets/js/jquery-3.4.0.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>     
     <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
 
 <body>
