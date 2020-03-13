@@ -26,7 +26,7 @@ categories: jekyll update
 
         var myChart = echarts.init(document.getElementById('main'));
 
-        $.get({{ site.data.shenzhen }},function(geojson){
+        $.get('{{ site.data.shenzhen }}',function(geojson){
             echarts.registerMap("shenzhen",geojson);
         
 
