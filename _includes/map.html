@@ -17,7 +17,7 @@
 
         var myChart = echarts.init(document.getElementById('main'));
 
-        $.get("/_data/shenzhen.json",function(geojson){
+        $.get("/_sites/assests/shenzhen.json",function(geojson){
             echarts.registerMap("shenzhen",geojson);
         
 
