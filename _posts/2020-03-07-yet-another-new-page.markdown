@@ -8,3 +8,4 @@ categories: jekyll update
 hello,echarts
 
 
+{% include map.html %}
