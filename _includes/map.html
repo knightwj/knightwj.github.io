@@ -193,7 +193,7 @@
 };
 
 
-        $.get(szmap,function(geojson){
+        $.getJSON(szmap,function(geojson){
             console.log(geojson);
             echarts.registerMap("shenzhen",geojson);
         
