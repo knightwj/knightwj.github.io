@@ -19,6 +19,7 @@
         var szmap= {{ site.data.shenzhen | jsonify }}
 
         $.get(szmap,function(geojson){
+            console.log(geojson);
             echarts.registerMap("shenzhen",geojson);
         
 
