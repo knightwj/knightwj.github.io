@@ -16,7 +16,7 @@
     <script type="text/javascript">
 
         var myChart = echarts.init(document.getElementById('main'));
-        var szmap= {{ site.data.shenzhen }}
+        var szmap= {{ site.data.shenzhen | jsonify }}
 
         $.get(szmap,function(geojson){
             echarts.registerMap("shenzhen",geojson);
