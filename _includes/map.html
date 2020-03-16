@@ -16,8 +16,9 @@
     <script type="text/javascript">
 
         var myChart = echarts.init(document.getElementById('main'));
+        var szmap= {{ site.data.shenzhen }}
 
-        $.get("https://github.com/knightwj/knightwj.github.io/blob/master/_data/shenzhen.json",function(geojson){
+        $.get(szmap,function(geojson){
             echarts.registerMap("shenzhen",geojson);
         
 
