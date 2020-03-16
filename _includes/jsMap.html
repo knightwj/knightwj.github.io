@@ -1,4 +1,3 @@
-
 <html>
 <head>
 
@@ -11,13 +10,9 @@
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 
 <body>
-    <div id="main" style="height:600px;width:800px;"/>
-
-
-  
+    <div id="jsmap" style="height:600px;width:800px;"/>
     <script type="text/javascript">
-
-
+    var myChart = echarts.init(document.getElementById('jsmap'));
 
 var name_title = "中国人民大学2017年各省市计划录取人数"
 var subname = '数据爬取自千栀网\n，\n上海、浙江无文理科录取人数'
