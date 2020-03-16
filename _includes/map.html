@@ -18,7 +18,7 @@
         var myChart = echarts.init(document.getElementById('main'));
         // var szmap= {{ site.data.shenzhen | jsonify }}
         
-        $.getJSON({{site.data.china}},function(geojson){
+        $.getJSON("{{ site.data.china }}",function(geojson){
             echarts.registerMap("shenzhen",geojson);
         
 
