@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "baidu map"
+date:   2020-03-09 10:25:27 +0800
+categories: jekyll update
+forjs: - 
+---
+
+hello,bdmap
+
+
+{% include baidumap.html %}
