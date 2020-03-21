@@ -8,9 +8,7 @@ categories: jekyll update
 
 hello,js 
 
-
 {% include jsMap.html %}
 
 hello,world
 
-{% include wdJSmap.html %}
