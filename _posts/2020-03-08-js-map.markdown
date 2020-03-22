@@ -12,3 +12,4 @@ hello,js
 
 hello,world
 
+{% include wdJSmap.html %}
