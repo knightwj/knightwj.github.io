@@ -7,9 +7,16 @@ categories: jekyll update
 ---
 
 hello,js 
-
+<center>
 {% include jsMap.html %}
-
+</center>
 hello,world
 
+<center>
 {% include wdJSmap.html %}
+</center>
+
+<p style="text-align:justify; text-justify:inter-ideograph;"> 
+keep trying to see if it works
+</p>
+
