@@ -5,12 +5,12 @@ date:   2020-03-08 10:25:27 +0800
 categories: jekyll update
 
 ---
+<p>hello,js </p>
 
-hello,js 
 <center>
 {% include jsMap.html %}
 </center>
-hello,world
+
 
 <center>
 {% include wdJSmap.html %}
