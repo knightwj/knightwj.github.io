@@ -50,7 +50,6 @@ var interval=setInterval(function () {
             source: data[x].id-1,
             target: data.length-1
         });
-        console.log(edges)
      data.push({
         id: data.length+1
     });
@@ -58,7 +57,6 @@ var interval=setInterval(function () {
             source: data[x].id-1,
             target: data[data.length-1].id-1
         });
-        console.log(edges)
     };
 
     if (data.length>200)
