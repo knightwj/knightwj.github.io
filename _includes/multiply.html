@@ -1,0 +1,84 @@
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- 引入 echarts.js -->
+     <script  src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.js"></script>
+     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+    <body>
+    <div id="multiply" style="height:1200px;width:1200px;"/>
+    <script type="text/javascript">
+     var myChart = echarts.init(document.getElementById('multiply'));
+
+    var data = [{
+    fixed: true,
+    x: myChart.getWidth() / 2,
+    y: myChart.getHeight() / 2,
+    symbolSize: 50,
+    id: 1
+}];
+
+var edges = [];
+
+option = {
+    series: [{
+        type: 'graph',
+        layout: 'force',
+        animation: false,
+        data: data,
+        force: {
+            // initLayout: 'circular'
+            // gravity: 0
+            repulsion: 100,
+            edgeLength: 5
+        },
+        edges: edges
+    }]
+};
+
+var interval=setInterval(function () {
+
+
+     for (x in data) { 
+     data.push({
+        id: data.length+1
+    });
+      edges.push({
+            source: data[x].id-1,
+            target: data.length-1
+        });
+        console.log(edges)
+     data.push({
+        id: data.length+1
+    });
+    edges.push({
+            source: data[x].id-1,
+            target: data[data.length-1].id-1
+        });
+        console.log(edges)
+    };
+
+    if (data.length>200)
+    {clearInterval(interval);
+        return;}
+
+    myChart.setOption({
+        series: [{
+            roam: true,
+            data: data,
+            edges: edges
+        }]
+    });
+
+    // console.log('nodes: ' + data.length);
+    // console.log('links: ' + data.length);
+}, 2000);
+
+    </script>
+
+</body>
+
+</html>
