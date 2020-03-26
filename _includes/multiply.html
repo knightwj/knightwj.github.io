@@ -5,7 +5,7 @@
 
     <!-- 引入 echarts.js -->
      <script  src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.js"></script>
-     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
 
 </head>
     <body>
@@ -17,30 +17,15 @@
     fixed: true,
     x: myChart.getWidth() / 2,
     y: myChart.getHeight() / 2,
-    symbolSize: 50,
+    symbolSize: 20,
     id: 1
 }];
 
 var edges = [];
 
-option = {
-    series: [{
-        type: 'graph',
-        layout: 'force',
-        animation: false,
-        data: data,
-        force: {
-            // initLayout: 'circular'
-            // gravity: 0
-            repulsion: 100,
-            edgeLength: 5
-        },
-        edges: edges
-    }]
-};
+    
 
 var interval=setInterval(function () {
-
 
      for (x in data) { 
      data.push({
@@ -59,21 +44,40 @@ var interval=setInterval(function () {
         });
     };
 
-    if (data.length>200)
+    if (data.length>2000)
     {clearInterval(interval);
-        return;}
+        return;};
 
-    myChart.setOption({
+/*    setTimeout(() => {
+  myChart.setOption({
         series: [{
             roam: true,
             data: data,
             edges: edges
         }]
+    })
+}, 500);*/
+    
+    myChart.setOption({
+        series: [{
+        type: 'graph',
+        layout: 'force',
+        animation: false,
+        data: data,
+        force: {
+            // initLayout: 'circular'
+            // gravity: 0
+            repulsion: 100,
+            edgeLength: 5
+        },
+        edges: edges
+    }]
     });
+
 
     // console.log('nodes: ' + data.length);
     // console.log('links: ' + data.length);
-}, 2000);
+}, 500);
 
     </script>
 
