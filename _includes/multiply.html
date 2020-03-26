@@ -44,7 +44,7 @@ var interval=setInterval(function () {
         });
     };
 
-    if (data.length>1000)
+    if (data.length>4000)
     {clearInterval(interval);
         return;};
 
@@ -67,7 +67,7 @@ var interval=setInterval(function () {
         force: {
             // initLayout: 'circular'
             // gravity: 0
-            repulsion: 10,
+            repulsion: 20,
             edgeLength: 1
         },
         edges: edges
