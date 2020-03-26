@@ -12,7 +12,8 @@
     <div id="multiply" style="height:1200px;width:1200px;"/>
     <script type="text/javascript">
      var myChart = echarts.init(document.getElementById('multiply'));
-
+    
+    // 设置初始数据
     var data = [{
     fixed: true,
     x: myChart.getWidth() / 2,
@@ -24,9 +25,10 @@
 var edges = [];
 
     
-
+    // setInterval的作用，每隔2000毫秒循环一次
 var interval=setInterval(function () {
 
+// 给每个初始节点增加两个子节点，加link
      for (x in data) { 
      data.push({
         id: data.length+1
@@ -44,19 +46,10 @@ var interval=setInterval(function () {
         });
     };
 
+// 设置循环中断点
     if (data.length>4000)
     {clearInterval(interval);
         return;};
-
-/*    setTimeout(() => {
-  myChart.setOption({
-        series: [{
-            roam: true,
-            data: data,
-            edges: edges
-        }]
-    })
-}, 500);*/
     
     myChart.setOption({
         series: [{
